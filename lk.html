@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="assets/css/lk.css">
+  <link rel="shortcut icon" href="assets/favicon/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="header container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/icon/LOGO.png" alt="ЛОГО" />
+        </a>
+      </div>
+      <nav>
+        <a href="catalog.html">Скидки</a>
+        <a href="catalog.html">Прокат</a>
+        <a href="lk.html">Отзывы</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="tel:+79999999999" class="phone">Контакты</a>
+      </nav>
+      <div class="contact">
+        <a href="registr.html">
+          <img src="assets/icon/icon_person.svg" alt="Профиль">
+        </a>
+        <a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="profile-header">
+      <div class="avatar">
+        <img src="assets/image/lk/person.png"/>
+      </div>
+      <div class="profile-name">Владислав</div>
+    </div>
+
+    <div class="buttons">
+      <button class="button">Изменить данные</button>
+      <button class="button">Главная</button>
+      <button class="button">Сохранить</button>
+    </div>
+
+    <div class="info">
+      <input type="text" placeholder="Имя">
+      <input type="email" placeholder="Email">
+      <input type="tel" placeholder="Номер телефона" class="full-width">
+    </div>
+
+    <div class="divider"></div>
+
+
+
+    <div class="history">
+      <h3>История</h3>
+      <div class="motorcycle-card">
+        <!-- Блок для отображения изображения -->
+        <div class="motorcycle-image-container">
+          <img src="assets/image/catalog/5454.png" alt="Мотоцикл" id="motorcycleImage" class="motorcycle-image">
+          <!-- Кнопка для загрузки нового изображения -->
+          <label for="uploadMotorcycleImage" class="upload-button">Загрузить фото</label>
+          <input type="file" id="uploadMotorcycleImage" style="display: none;" accept="image/*"
+            onchange="previewImage(this)">
+        </div>
+        <div class="motorcycle-info">
+          <p>Honda CBR650R (2020, ABS)</p>
+          <p>Тип: спортивный</p>
+          <p>Время аренды: 1 сутки</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Логотип -->
+      <div class="footer-logo">
+        <img src="assets/icon/LOGO.png" alt="Логотип">
+      </div>
+
+
+      <div class="footer-contacts">
+        <ul class="footer-contact-list">
+          <li>Скидки <a href="catalog.html">🫴</a></li>
+          <li>Цены <a href="catalog.html">🫴</a></li>
+          <li>Личный кабинет <a href="lk.html">🫴</a></li>
+          <li>Мотоциклы <a href="catalog.html">🫴</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><img src="assets/icon/ic_outline-whatsapp.svg" alt="WhatsApp"></a>
+          <a href="#"><img src="assets/icon/ri_vk-line.svg" alt="VK"></a>
+          <a href="#"><img src="assets/icon/tg.svg" alt="Telegram"></a>
+        </div>
+      </div>
+
+
+      <div class="footer-info" id="footer">
+        <p class="footer-company"><a href="tel:+79999999999" class="phone">+7 (999) 999-99-99</a></p>
+
+        <p class="footer-credit">Забронируй через WhatsApp</p>
+      </div>
+    </div>
+    <hr class="footer-line">
+    <div class="footer-copy">
+      2016-2021 &copy; "ЛАЙВ-ДРАЙВ"
+    </div>
+  </footer>
+</body>
+
+</html>

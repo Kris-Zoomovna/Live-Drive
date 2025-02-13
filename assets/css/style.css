@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .4s;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+@font-face {
+  font-family: 'Nuni';
+  src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+.header_banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/banner/banner_bg.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 96.12px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 900;
+    font-family: 'Nuni';
+    cursor: pointer;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact img{
+    cursor: pointer;
+}
+
+.contact img:hover{
+    transform: scale(1.1);
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 13px;
+    line-height: 21.79px;
+    font-weight: 900;
+    font-family: 'Nuni';
+    
+}
+
+.contact .phone {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24.55px;
+    letter-spacing: 0;
+    color: #ffd300;
+}
+
+.main-content {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.main-content h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 29px;
+    line-height: 59px;
+    font-weight: 900;
+    font-family: 'Nuni';
+}
+
+.main-content p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31px;
+    margin-bottom: 52px;
+    text-transform: uppercase;
+    font-family: 'Nuni';
+}
+
+.main-content .btn {
+    padding: 19px 55px;
+    font-size: 16px;
+    background-color: #4233CA;
+    color: #fff;
+    font-weight: 800;
+    line-height: 21.79px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.main-content .btn:hover {
+    background-color: #e0c700;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+}
+
+/* Стиль для картинки под контентом */
+.background-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact img{
+    cursor: pointer;
+}
+
+.contact img:hover{
+    transform: scale(1.1);
+}
+
+.contact .phone {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24.55px;
+    letter-spacing: 0;
+    color: #ffd300;
+    font-family: 'Nuni';
+}
+
+.main-content {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.main-content h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 29px;
+    line-height: 59px;
+    font-weight: 900;
+}
+
+.main-content p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31px;
+    margin-bottom: 52px;
+    text-transform: uppercase;
+}
+
+.main-content .btn {
+    padding: 19px 55px;
+    font-size: 16px;
+    background-color: #4233CA;
+    color: #fff;
+    font-weight: 800;
+    line-height: 21.79px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.main-content .btn:hover {
+    background-color: #e0c700;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+}
+
+.popular-new-models {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.popular-new-models .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item {
+    position: relative;
+    width: 48%;
+    border-radius: 125px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-label {
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Корректировка точного центра */
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Nuni', sans-serif;
+    white-space: nowrap;
+}
+
+
+.completed-tasks {
+	background-color: #17181C;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.tasks-title {
+	font-size: 32px;
+	font-weight: 900;
+	margin-bottom: 30px;
+	color: #ffffff;
+    font-family: 'Nuni';
+}
+
+.tasks-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slider-button {
+	background-color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+	background-color: #f0f0f0;
+}
+
+.slider-button img {
+	width: 16px;
+	height: 16px;
+}
+
+.task-card {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	max-width: 1000px;
+	width: 100%;
+	text-align: left;
+}
+
+.task-image img {
+	width: 350px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px 0 0 8px;
+}
+
+.task-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.task-content h3 {
+	font-size: 24px;
+	margin-bottom: 5px;
+	color: #000;
+  font-family: 'Nuni';
+  font-weight: 700;
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.client-name {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #666;
+  font-family: 'Nuni';
+}
+
+.criteria h4,
+.result h4 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #000;
+    font-family: 'Nuni';
+    font-weight: 900;
+}
+
+.criteria p,
+.result p {
+	font-size: 20px;
+	color: #555;
+	line-height: 1.5;
+	margin-bottom: 15px;
+    font-family: 'Nuni';
+}
+
+.verified {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 16px;
+	color: #666;
+}
+
+.verified img {
+	width: 20px;
+	height: 20px;
+}
+
+.details-button {
+	margin-top: 30px;
+	background-color: #f5f5f5;
+	color: #000;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+}
+
+.details-button:hover {
+	background-color: #e0e0e0;
+}
+
+/* footer */
+.footer {
+	background-color: #17181C;
+	padding: 40px 0;
+	color: #fff;
+}
+
+.footer-container {
+	max-width: 918px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+/* Логотип */
+.footer-logo img {
+	width: 117.05px;
+	height: 127.69px;
+	height: auto;
+}
+
+.footer-logo{
+  padding-right: 140px;
+}
+
+/* Свяжитесь с нами */
+.footer-contacts {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 15px;
+	font-size: 18px;
+	line-height: 1.6;
+    font-family: 'Nuni';
+    font-weight: 900;
+}
+
+.footer-social {
+	display: flex;
+	gap: 52px;
+}
+
+.footer-social img {
+	width: 42px;
+	height: 42px;
+	transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+	transform: scale(1.1);
+}
+
+/* Информация */
+.footer-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-company {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.footer-button:hover {
+	background-color: #ffc107;
+}
+
+.footer-credit {
+	font-size: 14px;
+	color: #FFD200;
+    font-family: 'Nuni';
+    font-weight: 900;
+}
+.footer-line {
+    width: 100%; /* Ширина линии */
+    border: none;
+    border-top: 1px solid #ddd; /* Толщина и цвет линии */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.footer-copy {
+    text-align: center; 
+    width: 100%;
+    margin-top: 20px; 
+    font-size: 14px;
+    color: #ccc; 
+    font-family: 'Nuni';
+}
+
+

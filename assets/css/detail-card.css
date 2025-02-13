@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .4s;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
+@font-face {
+  font-family: 'Nuni';
+  src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+/* .header_banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/banner/banner_bg.png);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* 
+Хедер
+*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 96.12px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4233CA;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 900;
+    font-family: 'Nuni';
+    cursor: pointer;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #4233CA;
+}
+
+.contact img{
+    cursor: pointer;
+}
+
+.contact img:hover{
+    transform: scale(1.1);
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+  	color: #FFD200;
+    font-size: 13px;
+    line-height: 21.79px;
+    font-weight: 900;
+    font-family: 'Nuni';
+    
+}
+
+.contact .phone {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24.55px;
+    letter-spacing: 0;
+    color: #4233CA;
+}
+.header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4233CA;
+    text-align: center;  /* Центрируем текст */
+    margin-top: 50px;
+    
+}
+/* дальше карточка */
+
+.product-card {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+		margin-top: 80px;
+    padding: 20px;
+    background-color: #FAF7F7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-bottom: 70px;
+}
+
+.product-image img {
+    width: 560px; /* Главная картинка размером 560x420 */
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+		font-family: 'Nuni';
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+		font-family: 'Nuni';
+}
+
+.book-button {
+    background-color: #4233CA;
+    color: white;
+    padding: 12px 42px; /* Уменьшаем отступы для уменьшения размера кнопки */
+    font-size: 16px; /* Уменьшаем шрифт */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    align-self: flex-start; /* Выравнивание по левому краю */
+		font-family: 'Nuni';
+}
+
+.book-button:hover {
+    background-color: #2d2384;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Отступ сверху, чтобы картинки не прилипали к основной картинке */
+}
+
+.small-images img {
+    width: 60px; /* Маленькие картинки размером 60x60px */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.price-hour{
+	font-family: 'Nuni';
+	font-size: 14px;
+}
+.rental-conditions, .mileage-limit {
+    margin-top: 20px;
+}
+
+.rental-conditions h4, .mileage-limit h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+		font-family: 'Nuni';
+}
+
+.rental-conditions ul, .mileage-limit ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rental-conditions ul li, .mileage-limit ul li {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 8px;
+		font-family: 'Nuni';
+}
+
+.news h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+.news p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+		font-family: 'Nuni';
+}
+
+/* footer */
+.footer {
+	background-color: #17181C;
+	padding: 40px 0;
+	color: #fff;
+}
+
+.footer-container {
+	max-width: 918px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+/* Логотип */
+.footer-logo img {
+	width: 117.05px;
+	height: 127.69px;
+	height: auto;
+}
+
+.footer-logo{
+  padding-right: 140px;
+}
+
+/* Свяжитесь с нами */
+.footer-contacts {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 15px;
+	font-size: 18px;
+	line-height: 1.6;
+    font-family: 'Nuni';
+    font-weight: 900;
+}
+
+.footer-social {
+	display: flex;
+	gap: 52px;
+}
+
+.footer-social img {
+	width: 42px;
+	height: 42px;
+	transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+	transform: scale(1.1);
+}
+
+/* Информация */
+.footer-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-company {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.footer-button:hover {
+	background-color: #ffc107;
+}
+
+.footer-credit {
+	font-size: 14px;
+	color: #FFD200;
+    font-family: 'Nuni';
+    font-weight: 900;
+}
+.footer-line {
+    width: 100%; /* Ширина линии */
+    border: none;
+    border-top: 1px solid #ddd; /* Толщина и цвет линии */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.footer-copy {
+    text-align: center; 
+    width: 100%;
+    margin-top: 20px; 
+    font-size: 14px;
+    color: #ccc; 
+    font-family: 'Nuni';
+}
+
+
